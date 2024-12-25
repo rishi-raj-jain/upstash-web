@@ -433,15 +433,15 @@ export default function CompareTable() {
             className="bg-white/3 px-4 py-0 align-top"
           >
             <CompareValue type="size" suffix="MB">
-              200
+              500
             </CompareValue>
           </td>
           <td
             hidden={isMobile ? !showPro10 : false}
             className="bg-white/3 px-4 py-0 align-top"
           >
-            <CompareValue type="size" suffix="MB">
-              500
+            <CompareValue type="size" suffix="GB">
+              1
             </CompareValue>
           </td>
         </tr>
@@ -571,7 +571,7 @@ export default function CompareTable() {
               suffix="TB"
               className="border-b-0"
               after={
-                <Tooltip content="Upon hitting this limit, we'll prompt you to upgrade without stopping your traffic.">
+                <Tooltip content="Upon hitting this limit, we'll prompt you to upgrade and increase your bandwidth rate from $0.03 to $0.10 per GB.">
                   <IconInfoCircle
                     className="ml-1 opacity-60"
                     stroke={1.2}
@@ -592,7 +592,7 @@ export default function CompareTable() {
               suffix="TB"
               className="border-b-0"
               after={
-                <Tooltip content="Upon hitting this limit, we'll prompt you to upgrade without stopping your traffic.">
+                <Tooltip content="Upon hitting this limit, we'll prompt you to upgrade and increase your bandwidth rate from $0.03 to $0.10 per GB.">
                   <IconInfoCircle
                     className="ml-1 opacity-60"
                     stroke={1.2}
@@ -1911,7 +1911,7 @@ export default function CompareTable() {
           >
             <CompareValue
               after={
-                <Tooltip content="Price can change depending on cloud provider's fee. $0.03 is when the client is in the same region.">
+                <Tooltip content="Price can change depending on cloud provider's fee. $0.03 is when the client is in the same region until plan's limit, $0.10 beyond that.">
                   <IconInfoCircle
                     className="ml-1 opacity-60"
                     stroke={1.2}
@@ -1929,7 +1929,7 @@ export default function CompareTable() {
           >
             <CompareValue
               after={
-                <Tooltip content="Price can change depending on cloud provider's fee. $0.03 is when the client is in the same region.">
+                <Tooltip content="Price can change depending on cloud provider's fee. $0.03 is when the client is in the same region until plan's limit, $0.10 beyond that.">
                   <IconInfoCircle
                     className="ml-1 opacity-60"
                     stroke={1.2}
